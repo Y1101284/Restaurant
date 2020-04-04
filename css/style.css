@@ -712,7 +712,11 @@ a.icon {
     font-size: 16px;
   }
 
-  /* .about-gallery {
+  .about-gallery {
+    -webkit-grid-template-columns: repeat(1, 1fr);
+    -moz-grid-template-columns: repeat(1, 1fr);
+    -ms-grid-template-columns: repeat(1, 1fr);
+    -o-grid-template-columns: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -722,8 +726,12 @@ a.icon {
   .w-4,
   .w-5,
   .w-6 {
+    -webkit-grid-column: span 1;
+    -moz-grid-column: span 1;
+    -ms-grid-column: span 1;
+    -o-grid-column: span 1;
     grid-column: span 1;
-  } */
+  }
 
   #header-home {
     height: 50vh;
