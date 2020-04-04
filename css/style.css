@@ -711,19 +711,10 @@ a.icon {
   body {
     font-size: 16px;
   }
-  /* 
-  .about-gallery {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
-  .w-1,
-  .w-2,
-  .w-3,
-  .w-4,
-  .w-5,
-  .w-6 {
-    grid-column: span 1;
-  } */
+  .about-gallery {
+    grid-template-columns: 1fr;
+  }
 
   #header-home {
     height: 50vh;
