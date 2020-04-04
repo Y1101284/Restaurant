@@ -711,12 +711,8 @@ a.icon {
   body {
     font-size: 16px;
   }
-
+  /* 
   .about-gallery {
-    -webkit-grid-template-columns: repeat(1, 1fr);
-    -moz-grid-template-columns: repeat(1, 1fr);
-    -ms-grid-template-columns: repeat(1, 1fr);
-    -o-grid-template-columns: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -726,11 +722,32 @@ a.icon {
   .w-4,
   .w-5,
   .w-6 {
-    -webkit-grid-column: span 1;
-    -moz-grid-column: span 1;
-    -ms-grid-column: span 1;
-    -o-grid-column: span 1;
     grid-column: span 1;
+  } */
+
+  .about-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
   }
 
   #header-home {
